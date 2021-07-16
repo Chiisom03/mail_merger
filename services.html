@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <!-- <script defer src="assets/js/script.js"></script> -->
+    <link rel="stylesheet" href="assets/css/boxicons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>mail merger</title>
+</head>
+
+<body>
+        <header>
+            <div class="l-header">
+                <h3>mail_merger v1.0</h3>
+                <div>
+                    <div id="menu-btn" class="menu__btn">
+                        <span class="bx bx-dots-vertical-rounded icon"></span>
+                    </div>
+                    <div class="menu" id="menu-modal">
+                        <ul  class="list">
+                            <a href="#"><li>one_list</li></a>
+                            <a href="#"><li>two__lists</li></a>
+                            <a href="#"><li>three__lists</li></a>
+                            <a href="#"><li>four__lists</li></a>
+                        </ul>
+                    </div>
+                    <div class="menu__overlay" id="menu-overlay"></div>
+                </div>
+            </div>
+            <div class="tabs">
+                <a role="button" tabindex="0" class="active" onclick="openTab(event, 'tab1')">tab 1</a>
+                <a role="button" tabindex="1" onclick="openTab(event, 'tab2')">tab 2</a>
+            </div>
+        </header>
+
+        <div class="tab_content" id="tab1">
+
+            <form action="">
+                <div class="l-form">
+                    <label for="" class="settings__label">Sender's info</label>
+                    <div class="form">
+                        <div class="form__div">
+                            <input type="text" class="form__input" placeholder=" ">
+                            <label for="" class="form__label">Sender's address</label>
+                        </div>
+
+                        <!-- input__info -->
+                        <div class="form__div">
+                            <input type="text" class="form__input" placeholder=" ">
+                            <label for="" class="form__label">Analytic profile</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="settings__section">
+                    <label for="" class="settings__label">Options</label>
+                    <div class="cards">
+                        <div class="options">
+                            <label for="">Use universal analytics</label>
+                            <label class="switch">
+                                <input type="checkbox" class="toggle_switch" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="options">
+                            <label for="">BC yourself</label>
+                            <label class="switch">
+                                <input type="checkbox" class="toggle_switch">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="nav__bar">
+                    <div class="drop__btn">
+                        Add draft
+                        <span class="bx bxs-chevron-down"></span>
+                    </div>
+                    <div class="wrapper">
+                        <ul class="menu__bar">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt beatae
+                                        illum omnis
+                                        facilis.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt beatae
+                                        illum omnis
+                                        facilis.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt beatae
+                                        illum omnis
+                                        facilis.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt beatae
+                                        illum omnis
+                                        facilis.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt beatae
+                                        illum omnis
+                                        facilis.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt beatae
+                                        illum omnis
+                                        facilis.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt beatae
+                                        illum omnis
+                                        facilis.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt beatae
+                                        illum omnis
+                                        facilis.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        orem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt beatae
+                                        illum omnis
+                                        facilis.
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Page modal starts-->
+                <div class="l-modal">
+                    <input type="button" data-modal-target="#page-modal" class="modal__btn" value="select from draft">
+                    <div class="page__modal" id="page-modal">
+                        <div class="modal__header">
+                            <div class="title">select from drafts</div>
+                            <i data-close-btn class="bx bxs-window-close close__btn">&times;</i>
+                        </div>
+                        <div class="modal__body">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt
+                                            beatae
+                                            illum omnis
+                                            facilis.
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt
+                                            beatae
+                                            illum omnis
+                                            facilis.
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt
+                                            beatae
+                                            illum omnis
+                                            facilis.
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt
+                                            beatae
+                                            illum omnis
+                                            facilis.
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt
+                                            beatae
+                                            illum omnis
+                                            facilis.
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt
+                                            beatae
+                                            illum omnis
+                                            facilis.
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt
+                                            beatae
+                                            illum omnis
+                                            facilis.
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal ends -->
+
+                <input type="submit" class="form__button" value="submit">
+            </form>
+            <!-- body overlay for the modal -->
+            <div class="bg__overlay" id="overlay"></div>
+        </div>
+
+        <div class="tab_content" id="tab2">
+            <h3>tab2</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem
+                facilis asperiores eaque
+                laudantium mollitia quia aliquid neque. Alias quod fuga at optio
+                deserunt quibusdam velit illum tempore, eligendi ab!
+            </p>
+        </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
